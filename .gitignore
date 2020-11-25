@@ -1,0 +1,26 @@
+/build/
+
+.idea
+logs/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Projects ###
+target
+build-repo/
+classes/production/
+nohup.out
+/tools/nohup.out
+git.properties
+#*.properties
+*.env.json
+*.versionsBackup
+
+### OS ###
+.DS_Store
