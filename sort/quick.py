@@ -1,25 +1,25 @@
-def quick_sort(array):
+def quick_sort(s):
     """快速排序, s是列表"""
-    if len(array) < 2:
+    if len(s) < 2:
         return
-    p = array[0]
+    p = s[0]
     L = []
     E = []
     R = []
 
-    while len(array) > 0:
-        if array[-1] < p:
-            L.append(array.pop())
-        elif array[-1] == p:
-            E.append(array.pop())
+    while len(s) > 0:
+        if s[-1] < p:
+            L.append(s.pop())
+        elif s[-1] == p:
+            E.append(s.pop())
         else:
-            R.append(array.pop())
+            R.append(s.pop())
 
     quick_sort(L)
     quick_sort(R)
-    array.extend(L)
-    array.extend(E)
-    array.extend(R)
+    s.extend(L)
+    s.extend(E)
+    s.extend(R)
 
 
 if __name__ == '__main__':
